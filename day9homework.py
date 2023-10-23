@@ -2,6 +2,8 @@ money = int(input("რა თანხას დებ: "))
 
 precent = float(input("რა პროცენტით დებ ანაბარს: "))
 
-year = money * precent
+year_1 = money * precent / 100 + money
 
-print("შენი თანხა ორ წელში იქნება: " + str(year * 2))
+year_2 = year_1 * precent / 100 + year_1
+
+print("შენი თანხა ორ წელში იქნება: " + str(year_2))
